@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.gradient.view.GradientActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/back_to"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_old_backward"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </com.gradient.view.GradientActionBar>
+
+    <com.gradient.view.GradientScrollView
+        android:id="@+id/scrillview"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:layout_width="match_parent"
+                    android:id="@+id/items_banner"
+                    android:layout_height="300dp"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/items_title"
+                    android:textStyle="bold"
+                    android:textColor="#303030"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/items_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="adasdasdad"
+                    android:textColor="#FF0033"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/items_desco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="adasdasdad"
+                    android:textColor="#303030"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+            <WebView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/webView"
+                />
+        </LinearLayout>
+
+
+    </com.gradient.view.GradientScrollView>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <LinearLayout
+            android:id="@+id/items_likes"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+           android:background="@drawable/action_like"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp">
+            <CheckBox
+                android:id="@+id/items_check"
+                android:layout_width="20dp"
+                style="@style/custom_checkbox"
+                android:checked="false"
+                android:clickable="false"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/items_check_text"
+                android:text="喜欢"
+                android:textSize="16sp"
+                android:textColor="#FF0033"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/click_to_buy"
+            android:background="@drawable/action_gotobuy"
+            android:textSize="16sp"
+            android:text="去天猫购买"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:textIsSelectable="false" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
